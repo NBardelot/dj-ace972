@@ -1,0 +1,314 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritence from `body` */
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    background-color: #0F1012;
+}
+
+body {
+    color: #EEE;
+    text-align: center;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+}
+
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 30px;
+}
+
+/*
+ * Header
+ */
+.masthead-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+    display: inline-block;
+}
+
+.masthead-nav > li + li {
+    margin-left: 20px;
+}
+
+.masthead-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* IE8 proofing */
+    color: rgba(255, 255, 255, .75);
+    border-bottom: 2px solid transparent;
+}
+
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: #a9a9a9;
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .masthead-brand {
+        float: left;
+    }
+
+    .masthead-nav {
+        float: right;
+    }
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+    width: 100%;
+    /*padding: 0 20px;*/
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+.cover-heading {
+    margin-top: 0;
+}
+
+.cover .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.logo {
+    height: 256px;
+    background-image: url("../img/dj-ace972.png");
+    background-size: 256px 256px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+    color: #999; /* IE8 proofing */
+    color: rgba(255, 255, 255, .75);
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 700px;
+    }
+}
+
+@media (min-width: 992px) and (min-aspect-ratio: 3/2) {
+    .cover {
+        background-color: rgba(0, 0, 0, 0.3);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+}
+
+
+.btn-devis, .btn-devis.active, .btn-devis.focus, .btn-devis:active, .btn-devis:focus, .btn-devis:hover, .open>.dropdown-toggle.btn-devis {
+    background-color: rgb(0, 33, 154);
+    border: none;/* 1px solid red;*/ /* #002CC4*/
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+@media (max-height: 500px), (max-width: 500px) {
+    .logo {
+        height: 156px;
+        background-size: 156px 156px;
+    }
+}
+
+@media (min-aspect-ratio: 3/2) {
+    body {
+        background-image: url("../img/background.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: transparent;
+    border-color: rgb(0, 33, 154);
+}
+
+.nav {
+    text-shadow: none;
+}
+
+.dropdown-header {
+    color: rgb(0, 33, 154);
+    font-weight: bold;
+}
+
+.masthead-nav > li > a {
+    border-bottom: none;
+    color: #EEE;
+}
+
+.dropdown-menu>li.icon-social>a {
+    padding: 3px 20px;
+}
+
+.icon-social {
+    height: 24px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: #FFF;
+}
+
+.icon-youtube {
+    background-image: url("../img/youtube_49x49.png");
+}
+
+.icon-twitter {
+    background-image: url("../img/twitter_49x49.png");
+}
+
+.icon-instagram {
+    background-image: url("../img/instagram_49x49.png");
+}
+
+.icon-googleplus {
+    background-image: url("../img/googleplus_49x49.png");
+}
+
+.icon-facebook {
+    background-image: url("../img/facebook_49x49.png");
+}
+
+.icon-vimeo {
+    background-image: url("../img/vimeo_49x49.png");
+}
+
+.dropdown-menu>li.icon-social>a {
+    margin-left: 47px;
+    padding: 3px 3px;
+}
+
+.dropdown-menu>li.icon-social>a:hover {
+    background-color: transparent;
+}
+
+.icon-social:hover {
+    background-color: rgb(245,245,245);
+}
+
+.modal {
+    color: #333;
+    text-shadow: none;
+}
+
+#modal-devis-complet .modal-footer {
+    text-align: center;
+    font-size: small;
+}
+
+#formulaire-devis-1,#formulaire-devis-2,#formulaire-devis-3 {
+    margin: auto;
+    width: 80%;
+    display: none;
+}
+
+.form-buttons {
+    padding-bottom: 15px;
+}
+
+.mastfoot {
+    margin-top: 10px;
+}
